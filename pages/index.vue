@@ -30,6 +30,15 @@
         ></v-checkbox>
       </div>
     </section>
+    <section id="input-section">
+      <div>
+        <v-text-field
+          v-model="inputMessage"
+          label="Input Message"
+        ></v-text-field>
+        <p>Input Message: {{ inputMessage }}</p> 
+      </div>
+    </section>
   </div>
 </template>
 
@@ -46,7 +55,8 @@
           { name: 'Learn Vue', completed: false },
           { name: 'Learn Laravel', completed: false },
           { name: 'Learn PHP', completed: false}
-        ]
+        ],
+        inputMessage: ''
       }
     },
     methods: {
